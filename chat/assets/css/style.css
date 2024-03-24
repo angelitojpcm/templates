@@ -23,31 +23,106 @@ body {
 }
 
 .menu {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background: var(--color-dark-gray);
-    height: 59px;
-    padding: 10px 16px;
-    z-index: 1000;
-    width: 30%; 
-  }
-  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: var(--color-dark-gray);
+  height: 59px;
+  padding: 10px 16px;
+  z-index: 1000;
+  width: 22%;
+}
+.menu .profile {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 2;
+}
 
-.menu .photo {
+.menu .profile .photo {
+  display: flex;
   position: absolute;
   top: 50%;
-  left: 16px; /* ajusta la posición horizontal según sea necesario */
+  left: 16px;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 2000;
 }
 
-.menu .photo .photo_profile {
+.menu .profile .photo {
   visibility: visible !important;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.menu .profile .name-profile {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(var(--white-rgb));
+  position: absolute; 
+  top: 50%;
+  left: 70px; 
+  transform: translateY(-50%);
+}
+.menu .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .navigation .comunity,
+.menu .navigation .status,
+.menu .navigation .new-chat,
+.menu .navigation .other-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .navigation .comunity i,
+.menu .navigation .status i,
+.menu .navigation .new-chat i,
+.menu .navigation .other-options i {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(var(--white-rgb));
+}
+
+.menu .navigation .comunity:hover,
+.menu .navigation .status:hover,
+.menu .navigation .new-chat:hover,
+.menu .navigation .other-options:hover {
+  background-color: #ddd;
+}
+
+.menu .navigation .comunity:hover i,
+.menu .navigation .status:hover i,
+.menu .navigation .new-chat:hover i,
+.menu .navigation .other-options:hover i {
+  color: var(--color-dark-gray);
+  animation: hover-animation 0.6s ease forwards;
+}
+
+/* Animación */
+@keyframes hover-animation {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -2,31 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!--Font Awesome Cdn-->
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css">
+        href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="menu">
-        <div class="photo" id="photo" data-tab="2" tabindex="-1" role="button" aria-label="foto de perfil"
-            style="height: 40px; width: 45px; cursor:pointer;">
-            <img src="./assets/img/avatars/man.jpg" alt="" draggable="false" class="photo_profile" tabindex="-1"
-                style="visibility:hidden;">
+        <div class="profile" id="profile" data-tab="2" tabindex="-1" role="button" aria-label="foto de perfil"
+            style="height: 40px; width: 45px; cursor: pointer">
+            <img src="./assets/img/avatars/man.jpg" alt="" draggable="false" class="photo" tabindex="-1"
+                style="visibility: hidden" />
+            <span class="name-profile">Angel Mantilla</span>
         </div>
         <div class="navigation">
-            <i class="fas fa-users"></i>
-            <i class="far fa-eye"></i>
-            <i class="fa-solid fa-message-plus"></i>
-            <i class="fas fa-ellipsis-v"></i>
+            <div class="comunity" id="comunity">
+                <i class="fas fa-users"></i>
+            </div>
 
+            <div class="status" id="status">
+                <i class="far fa-eye"></i>
+            </div>
+
+            <div class="new-chat" id="new-chat">
+                <i class="fa-solid fa-message-plus"></i>
+            </div>
+
+            <div class="other-options" id="other-options">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
