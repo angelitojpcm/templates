@@ -1,0 +1,53 @@
+:root {
+  --color-dark-gray: #202c33;
+  --color-light-gray: #c3c2be;
+  --color-green: #11ad83;
+  --color-teal: #557673;
+  --color-blue: #5e7cac;
+  --color-brown: #684e42;
+  --color-dark-blue: #424f5b;
+  --color-medium-blue: #394d77;
+  --color-dark-brown: #483a38;
+  --color-dark-teal: #325046;
+  --white-rgb: 255, 255, 255;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-light-gray);
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: var(--color-dark-gray);
+    height: 59px;
+    padding: 10px 16px;
+    z-index: 1000;
+    width: 30%; 
+  }
+  
+
+.menu .photo {
+  position: absolute;
+  top: 50%;
+  left: 16px; /* ajusta la posición horizontal según sea necesario */
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.menu .photo .photo_profile {
+  visibility: visible !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
